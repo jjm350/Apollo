@@ -1,0 +1,19 @@
+﻿  Gauge.cpp
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(20): error C2601: 'stancon': local function definitions are illegal
+  c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(14): note: this line contains a '{' which has not yet been matched
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(23): error C2065: 'stanpres': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(24): error C2065: 'x': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(26): error C2065: 'inpres': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(27): error C2601: 'altimeter': local function definitions are illegal
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(47): error C2601: 'airspeedind': local function definitions are illegal
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(31): error C2065: 'inpres': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(31): error C2065: 'stanpres': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(33): error C2065: 'T': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(33): error C2065: 'L': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(34): error C2065: 'unitcon': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(37): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(43): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(53): error C2065: 'inpres': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(54): error C2065: 'x': undeclared identifier
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(58): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\myers\desktop\apollo-master\consoleapplication2\gauge.cpp(64): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
