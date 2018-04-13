@@ -5,22 +5,22 @@
 #include <cmath>
 #include <iostream>
 
-int altimeter(double T, double L, double inpres, double stanpres)
+int altimeter(double inpres, double stanpres)
 {
-	double h, x, xn, y, z;
-	x = 5.2554;
-	xn = 1 / x;
-	y = inpres / stanpres;
-	z = pow(y, xn);
-	h = (T*(1 - (z)) / L);
+
+	double h;
+	h = 1000 * (stanpres - inpres);
 	return h;
 };
 
 int airspeed(double pitotpres, double inpres)
 {
-	double g(9.81), M(.0289644), R(8.31447), T(288.15), L(.0065), rho(1.225), aspeed;
+	//Airspeed in Kts
+	double rho(1.225), aspeed;
+	pitotpres = pitotpres * 3356.39;
+	inpres = inpres * 3356.39;
 	aspeed = sqrt((2 * (pitotpres - inpres)) / rho);
-	aspeed = aspeed * 3.6;
+	aspeed = aspeed * 1.94384;
 	return aspeed;
 };
 

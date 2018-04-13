@@ -18,9 +18,6 @@
     <ClInclude Include="datacalc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="retreiver.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Apollo.cpp">
@@ -29,6 +26,9 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="data.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="parameters.txt">
       <Filter>Resource Files</Filter>
     </Text>
   </ItemGroup>

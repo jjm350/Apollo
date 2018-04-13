@@ -1,5 +1,8 @@
 ﻿  Apollo.cpp
-c:\users\myers\desktop\apollo-master\apollo\apollo\datacalc.h(16): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
+c:\users\myers\desktop\apollo-master\apollo\apollo\datacalc.h(13): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
 c:\users\myers\desktop\apollo-master\apollo\apollo\datacalc.h(24): warning C4244: 'return': conversion from 'double' to 'int', possible loss of data
-c:\users\myers\desktop\apollo-master\apollo\apollo\retreiver.h(19): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\myers\desktop\apollo-master\apollo\apollo\apollo.cpp(17): warning C4101: 'stanpres': unreferenced local variable
+c:\users\myers\desktop\apollo-master\apollo\apollo\apollo.cpp(17): warning C4101: 'inpres': unreferenced local variable
+c:\users\myers\desktop\apollo-master\apollo\apollo\apollo.cpp(18): warning C4101: 'resultd': unreferenced local variable
+c:\users\myers\desktop\apollo-master\apollo\apollo\apollo.cpp(17): warning C4101: 'pitotpres': unreferenced local variable
   Apollo.vcxproj -> C:\Users\Myers\Desktop\apollo-master\Apollo\x64\Debug\Apollo.exe

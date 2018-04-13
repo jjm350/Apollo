@@ -6,27 +6,33 @@
 #include "datacalc.h"
 #include <cmath>
 #include <iostream>
-#include "retreiver.h"
+#include <fstream>
+#include <sstream>
 using namespace std;
 
 int main() {
-	//input pressures are in Pa
+	//input presures are in inHg
 	//sensors: pitotpres, inpres
-	//userdefined: stanpres, units
-	double g(9.81), M(.0289644), R(8.31447), T(288.15), L(.0065), rho(1.225);
+	//userdefined: stanpres, units	
 	double inpres, stanpres, pitotpres;
 	int resulth, resultaspeed, resultd, x;
 	x = 1;
 	while (x == 1) {
-		resultd = datacollect();
-		cin >> inpres;
-		cin >> stanpres;
-		cin >> pitotpres;
-		resulth = altimeter(T, L, inpres, stanpres);
-		cout << "Altitude is: " << resulth << " Meters" << endl;
+		//data importation
+		ifstream myfile("data.txt", ios::in);
+		float inpres, stanpres, pitotpres;
+		myfile >> inpres >> stanpres >> pitotpres;
+
+		//calculation subroutines, units are in standard kts and ft
+		resulth = altimeter(inpres, stanpres);
 		resultaspeed = airspeed(pitotpres, inpres);
-		cout << "Airspeed is: " << resultaspeed << " Km/h" << endl;
-		};
+
+		//writing to parameters
+		ofstream bfile;
+		bfile.open("parameters.txt");
+		bfile << "Altitude: " << resulth <<" " << "Airspeed: " << resultaspeed;
+		bfile.close();
+	};
 	return 0;
 };
 
